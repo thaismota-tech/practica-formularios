@@ -22,7 +22,71 @@
         </fieldset>
 
         <br>
+<fieldset>
+            <legend>Detalles de la bicicleta:</legend>
 
+            <p>
+                <label for="color">Color de la bicicleta:</label><br>
+                <input type="color" id="color" name="color" value="#ff0000" tabindex="3">
+            </p>
+
+            <p>
+                <label for="precio">Rango de precio (€):</label><br>
+                <input type="range" id="precio" name="precio" min="0" max="5000" step="100" tabindex="4">
+            </p>
+
+            <p>
+                <label for="tipo">Tipo de bicicleta:</label><br>
+                <select id="tipo" name="tipo" tabindex="5">
+                    <optgroup label="Urbana">
+                        <option value="clasica">Bicicleta Clásica</option>
+                        <option value="plegable">Bicicleta Plegable</option>
+                        <option value="electrica">Bicicleta Eléctrica</option>
+                        <option value="commuter">Bicicleta Commuter</option>
+                    </optgroup>
+                    <optgroup label="Montaña">
+                        <option value="sport">Bicicletas de tipo Sport</option>
+                        <option value="trail">Bicicletas de tipo Trail o Hard Tail</option>
+                        <option value="xc">Bicicletas para XC o Cross Country</option>
+                    </optgroup>
+                    <optgroup label="Carreras">
+                        <option value="gran-fondo">Bicicletas Gran Fondo</option>
+                        <option value="racing">Bicicletas Racing</option>
+                        <option value="aero">Bicicletas Aero</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="marca">¿Qué marca era? (Escribe para buscar):</label><br>
+                <input list="marcas" id="marca" name="marca" placeholder="Ej: Specialized" tabindex="6">
+                <datalist id="marcas">
+                    <option value="specialized">
+                    <option value="trek">
+                    <option value="merida">
+                    <option value="scott">
+                    <option value="giant">
+                    <option value="cube">
+                    <option value="lapierre">
+                    <option value="orbea">
+                    <option value="cannondale">
+                    <option value="bmc">
+                    <option value="canyon">
+                    <option value="look">
+                    <option value="protek">
+                    <option value="megamo">
+                    <option value="pinarello">
+                    <option value="bianchi">
+                    <option value="bh">
+                    <option value="factor">
+                    <option value="ghost">
+                    <option value="cervélo">
+                    <option value="argon">
+                </datalist>
+            </p>
+        </fieldset>
+
+        <br>
     </form>   
 </body>
 </html>
