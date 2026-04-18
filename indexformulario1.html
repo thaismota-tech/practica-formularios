@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 1</title>
+    <h1>Registrarse en el club:</h1>
+</head>
+<body>
+    <form action="#" method="post">
+            <fieldset>
+                <legend>Tus datos personales:</legend>
+
+            <p>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" tabindex="1" autofocus required>
+            </p>
+
+            <p>
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" tabindex="2" required>
+            </p>
+
+            <p>
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" placeholder="00" min="0" tabindex="3">
+            </p>
+
+            <p>Sexo:
+                <input type="radio" id="hombre" name="sexo" value="hombre" tabindex="4">
+                <label for="hombre">Hombre</label>
+                
+                <input type="radio" id="mujer" name="sexo" value="mujer" tabindex="5">
+                <label for="mujer">Mujer</label>
+
+                <input type="radio" id="nobinario" name="sexo" value="nobinario" tabindex="6">
+                <label for="nobinario">No binario</label>
+
+                <input type="radio" id="prefieronodecirlo" name="sexo" value="prefieronodecirlo" tabindex="7">
+                <label for="prefieronodecirlo">Prefiero no decirlo</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="registro" name="registro" tabindex="8">
+                <label for="registro">Quiero ser parte del club y acceder a todas las ofertas disponibles.</label>
+            </p>
+
+            <p>
+                <label for="bio">Escribe algo sobre ti:</label><br>
+                <textarea id="bio" name="bio" rows="4" placeholder="Nos encantaría conocerte mejor..." tabindex="9"></textarea>
+            </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Tus datos de contacto:</legend>
+
+            <p>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" tabindex="10" required>
+            </p>
+
+            <p>
+                <label for="tel">Teléfono:</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="600000000" tabindex="11">
+            </p>
+        </fieldset>
+
+        <br>
+         <button type="submit" tabindex="12">Enviar registro</button>
+        <button type="reset" tabindex="13">Limpiar formulario</button>
+        <br>
+    </form>   
+</body>
+</html>

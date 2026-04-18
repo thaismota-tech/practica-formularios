@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 2</title>
+    <h1>Registrar el robo de la bicicleta:</h1>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Información sobre el incidente:</legend>
+            
+            <p>
+                <label for="fecha">Día del robo:</label><br>
+                <input type="date" id="fecha" name="fecha" tabindex="1" autofocus required>
+            </p>
+
+            <p>
+                <label for="hora">Hora aproximada:</label><br>
+                <input type="time" id="hora" name="hora" tabindex="2">
+            </p>
+        </fieldset>
+
+        <br>
+<fieldset>
+            <legend>Detalles de la bicicleta:</legend>
+
+            <p>
+                <label for="color">Color de la bicicleta:</label><br>
+                <input type="color" id="color" name="color" value="#ff0000" tabindex="3">
+            </p>
+
+            <p>
+                <label for="precio">Rango de precio - hasta un máximo de 10.000 (€):</label><br>
+                <input type="range" id="precio" name="precio" min="0" max="10000" tabindex="4">
+            </p>
+
+            <p>
+                <label for="tipo">Tipo de bicicleta:</label><br>
+                <select id="tipo" name="tipo" tabindex="5" required>
+                    <optgroup label="Urbana">
+                        <option value="clasica">Bicicleta Clásica</option>
+                        <option value="plegable">Bicicleta Plegable</option>
+                        <option value="electrica">Bicicleta Eléctrica</option>
+                        <option value="commuter">Bicicleta Commuter</option>
+                    </optgroup>
+                    <optgroup label="Montaña">
+                        <option value="sport">Bicicletas de tipo Sport</option>
+                        <option value="trail">Bicicletas de tipo Trail o Hard Tail</option>
+                        <option value="xc">Bicicletas para XC o Cross Country</option>
+                    </optgroup>
+                    <optgroup label="Carreras">
+                        <option value="gran-fondo">Bicicletas Gran Fondo</option>
+                        <option value="racing">Bicicletas Racing</option>
+                        <option value="aero">Bicicletas Aero</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="marca">¿Qué marca era? (Escribe para buscar):</label><br>
+                <input list="marcas" id="marca" name="marca" placeholder="Ej: Specialized" tabindex="6" required>
+                <datalist id="marcas">
+                    <option value="specialized">
+                    <option value="trek">
+                    <option value="merida">
+                    <option value="scott">
+                    <option value="giant">
+                    <option value="cube">
+                    <option value="lapierre">
+                    <option value="orbea">
+                    <option value="cannondale">
+                    <option value="bmc">
+                    <option value="canyon">
+                    <option value="look">
+                    <option value="protek">
+                    <option value="megamo">
+                    <option value="pinarello">
+                    <option value="bianchi">
+                    <option value="bh">
+                    <option value="factor">
+                    <option value="ghost">
+                    <option value="cervélo">
+                    <option value="argon">
+                </datalist>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Accesorios instalados:</legend>
+            <p>
+                <label for="accesorios">Selecciona los accesorios (Mantén Ctrl para varios):</label><br>
+                <select id="accesorios" name="accesorios" multiple size="6" tabindex="7">
+                    <option value="ruedines">Ruedines</option>
+                    <option value="hinchadores">Hinchadores</option>
+                    <option value="rodillos">Rodillos</option>
+                    <option value="bomba">Bomba de aire</option>
+                    <option value="alforja">Alforja</option>
+                    <option value="silla">Silla portabebés</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tus datos de contacto:</legend>
+
+            <p>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" tabindex="10" required>
+            </p>
+
+            <p>
+                <label for="tel">Teléfono:</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="600000000" tabindex="11" required>
+            </p>
+        </fieldset>
+
+
+        <br>
+        <button type="submit" tabindex="8">Registrar incidencia</button>
+        <button type="reset" tabindex="9">Limpiar datos</button>
+    </br>
+    </form>   
+</body>
+</html>
