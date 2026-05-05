@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulario 1</title>
     <h1>Registrarse en el club:</h1>
 </head>
+
 <body>
-    <form action="#" method="post">
-            <fieldset>
-                <legend>Tus datos personales:</legend>
+    <form id="formularioThais" action="#" method="post">
+        <fieldset>
+            <legend>Tus datos personales:</legend>
 
             <p>
                 <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" tabindex="1" autofocus required>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" tabindex="1" autofocus required minlength="3">
             </p>
 
             <p>
                 <label for="apellidos">Apellidos:</label><br>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" tabindex="2" required>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" tabindex="2" required minlength="5">
             </p>
 
             <p>
                 <label for="edad">Edad:</label><br>
-                <input type="number" id="edad" name="edad" placeholder="00" min="0" tabindex="3">
+                <input type="number" id="edad" name="edad" placeholder="18" min="18" tabindex="3" required>
             </p>
 
             <p>Sexo:
                 <input type="radio" id="hombre" name="sexo" value="hombre" tabindex="4">
                 <label for="hombre">Hombre</label>
-                
+
                 <input type="radio" id="mujer" name="sexo" value="mujer" tabindex="5">
                 <label for="mujer">Mujer</label>
 
@@ -40,13 +42,14 @@
             </p>
 
             <p>
-                <input type="checkbox" id="registro" name="registro" tabindex="8">
+                <input type="checkbox" id="registro" name="registro" tabindex="8" required>
                 <label for="registro">Quiero ser parte del club y acceder a todas las ofertas disponibles.</label>
             </p>
 
             <p>
                 <label for="bio">Escribe algo sobre ti:</label><br>
-                <textarea id="bio" name="bio" rows="4" placeholder="Nos encantaría conocerte mejor..." tabindex="9"></textarea>
+                <textarea id="bio" name="bio" rows="4" placeholder="Nos encantaría conocerte mejor..."
+                    tabindex="9"></textarea>
             </p>
         </fieldset>
         <br>
@@ -61,14 +64,16 @@
 
             <p>
                 <label for="tel">Teléfono:</label><br>
-                <input type="tel" id="tel" name="tel" placeholder="600000000" tabindex="11">
+                <input type="tel" id="tel" name="tel" placeholder="600000000" tabindex="11" minlength="9">
             </p>
         </fieldset>
 
         <br>
-         <button type="submit" tabindex="12">Enviar registro</button>
+        <button type="submit" tabindex="12">Enviar registro</button>
         <button type="reset" tabindex="13">Limpiar formulario</button>
         <br>
-    </form>   
+    </form>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
