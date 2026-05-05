@@ -30,12 +30,12 @@ formularioThais.addEventListener("submit", function (event) {
         valido = false;
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email.value)) {
+    if (email.value === "") {
+        event.preventDefault();
         alert("Por favor, ingresa un email válido.");
         valido = false;
     }
-
+ 
     if (tel.value.length < 9) {
         alert("El teléfono debe tener al menos 9 caracteres.");
         valido = false;
